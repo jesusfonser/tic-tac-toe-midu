@@ -39,7 +39,7 @@ function App() {
     setTurn(newturn)
 
     window.localStorage.setItem("board", JSON.stringify(newboard))
-    window.localStorage.setItem("turn", turn);
+    window.localStorage.setItem("turn", newturn);
 
     const newWinner = checkWinner(newboard);
     if (newWinner){
